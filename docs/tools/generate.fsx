@@ -10,29 +10,22 @@
 // referenceBinaries list below in order to generate documentation for the binaries.
 // (This is the original behaviour of ProjectScaffold prior to multi project support)
 let referenceBinaries = []
-// Web site location for the generated documentation
 let website = "/FSharp.Data.GraphQL"
 
-let githubLink = "http://github.com/bazingatechnologies/FSharp.Data.GraphQL"
+let githubLink = "http://github.com/pcarrier/Pure.GraphQL"
 
-// Specify more information about your project
 let info =
-  [ "project-name", "FSharp.Data.GraphQL"
-    "project-author", "Bazinga Technologies Inc"
+  [ "project-name", "Pure.GraphQL"
+    "project-author", "Pierre Carrier"
     "project-summary", "FSharp implementation of Facebook GraphQL query language"
     "project-github", githubLink
     "project-nuget", "http://nuget.org/packages/FSharp.Data.GraphQL" ]
-
-// --------------------------------------------------------------------------------------
-// For typical project, no changes are needed below
-// --------------------------------------------------------------------------------------
 
 #load "../../packages/build/FSharp.Formatting/FSharp.Formatting.fsx"
 #I "../../packages/build/FAKE/tools/"
 #r "FakeLib.dll"
 open Fake
 open System.IO
-open Fake.FileHelper
 open FSharp.Literate
 open FSharp.MetadataFormat
 

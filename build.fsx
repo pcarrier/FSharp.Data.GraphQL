@@ -35,19 +35,11 @@ open Fake.Core
 open Fake.Api
 open Octokit
 
-// --------------------------------------------------------------------------------------
-// Information about the project are used
-// --------------------------------------------------------------------------------------
-//  - for version and project name in generated AssemblyInfo file
-//  - by the generated NuGet package
-//  - to run tests and to publish documentation on GitHub gh-pages
-//  - for documentation, you also need to edit info in "docs/tools/generate.fsx"
-
-let project = "FSharp.Data.GraphQL"
+let project = "Pure.GraphQL"
 let summary = "FSharp implementation of Facebook GraphQL query language"
-let gitOwner = "bazingatechnologies"
+let gitOwner = "pcarrier"
 let gitHome = "https://github.com/" + gitOwner
-let gitName = "FSharp.Data.GraphQL"
+let gitName = "Pure.GraphQL"
 let release = ReleaseNotes.load "RELEASE_NOTES.md"
 
 module Util =
