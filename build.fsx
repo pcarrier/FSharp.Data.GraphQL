@@ -36,10 +36,10 @@ open Fake.Api
 open Octokit
 
 let project = "Pure.GraphQL"
-let summary = "FSharp implementation of Facebook GraphQL query language"
+let summary = "GraphQL library for F#"
 let gitOwner = "pcarrier"
 let gitHome = "https://github.com/" + gitOwner
-let gitName = "Pure.GraphQL"
+let gitName = project
 let release = ReleaseNotes.load "RELEASE_NOTES.md"
 
 module Util =
@@ -140,14 +140,14 @@ Target.create "AssemblyInfo" (fun _ ->
           
     let internalsVisibility (fsproj: string) =
         match fsproj with
-        | f when f.EndsWith "FSharp.Data.GraphQL.Shared.fsproj" -> 
-            [ AssemblyInfo.InternalsVisibleTo "FSharp.Data.GraphQL.Server"
-              AssemblyInfo.InternalsVisibleTo "FSharp.Data.GraphQL.Client"
-              AssemblyInfo.InternalsVisibleTo "FSharp.Data.GraphQL.Client.DesignTime"
-              AssemblyInfo.InternalsVisibleTo "FSharp.Data.GraphQL.Tests" ]
-        | f when f.EndsWith "FSharp.Data.GraphQL.Server.fsproj" -> 
-            [ AssemblyInfo.InternalsVisibleTo "FSharp.Data.GraphQL.Benchmarks"
-              AssemblyInfo.InternalsVisibleTo "FSharp.Data.GraphQL.Tests" ]
+        | f when f.EndsWith "Pure.GraphQL.Shared.fsproj" -> 
+            [ AssemblyInfo.InternalsVisibleTo "Pure.GraphQL.Server"
+              AssemblyInfo.InternalsVisibleTo "Pure.GraphQL.Client"
+              AssemblyInfo.InternalsVisibleTo "Pure.GraphQL.Client.DesignTime"
+              AssemblyInfo.InternalsVisibleTo "Pure.GraphQL.Tests" ]
+        | f when f.EndsWith "Pure.GraphQL.Server.fsproj" -> 
+            [ AssemblyInfo.InternalsVisibleTo "Pure.GraphQL.Benchmarks"
+              AssemblyInfo.InternalsVisibleTo "Pure.GraphQL.Tests" ]
         | _ -> []
 
     let getProjectDetails projectPath =
@@ -159,7 +159,7 @@ Target.create "AssemblyInfo" (fun _ ->
         )
 
     !! "src/**/*.??proj"
-    -- "src/FSharp.Data.GraphQL.Client.DesignTime/FSharp.Data.GraphQL.Client.DesignTime.fsproj"
+    -- "src/Pure.GraphQL.Client.DesignTime/Pure.GraphQL.Client.DesignTime.fsproj"
     |> Seq.map getProjectDetails
     |> Seq.iter (fun (projFileName, _, folderName, attributes) ->
             match projFileName with
@@ -255,10 +255,10 @@ Target.create "RunTests" (fun _ ->
         |> ignore // FAKE automatically kills all started processes at the end of the script, so we don't need to worry about finishing them
         if not (waiter.WaitOne(TimeSpan.FromMinutes(float 2)))
         then failwithf "Timeout while waiting for %s server to run. Can not run integration tests." projectName
-    runTests "tests/FSharp.Data.GraphQL.Tests/FSharp.Data.GraphQL.Tests.fsproj"
-    startServer ("samples" </> "star-wars-api" </> "FSharp.Data.GraphQL.Samples.StarWarsApi.fsproj")
-    startServer ("tests" </> "FSharp.Data.GraphQL.IntegrationTests.Server" </> "FSharp.Data.GraphQL.IntegrationTests.Server.fsproj")
-    runTests "tests/FSharp.Data.GraphQL.IntegrationTests/FSharp.Data.GraphQL.IntegrationTests.fsproj")
+    runTests "tests/Pure.GraphQL.Tests/Pure.GraphQL.Tests.fsproj"
+    startServer ("samples" </> "star-wars-api" </> "Pure.GraphQL.Samples.StarWarsApi.fsproj")
+    startServer ("tests" </> "Pure.GraphQL.IntegrationTests.Server" </> "Pure.GraphQL.IntegrationTests.Server.fsproj")
+    runTests "tests/Pure.GraphQL.IntegrationTests/Pure.GraphQL.IntegrationTests.fsproj")
 
 // --------------------------------------------------------------------------------------
 // Generate the documentation
@@ -532,8 +532,8 @@ Target.create "Release" (fun _ ->
 )
 
 Target.create "AdHocBuild" (fun _ ->
-    !! "src/FSharp.Data.GraphQL.Client/FSharp.Data.GraphQL.Client.fsproj"
-    |> MSBuild.runDebug id "bin/FSharp.Data.GraphQL.Client" "Build"
+    !! "src/Pure.GraphQL.Client/Pure.GraphQL.Client.fsproj"
+    |> MSBuild.runDebug id "bin/Pure.GraphQL.Client" "Build"
     |> Trace.logItems "Output: "
 )
 
@@ -579,11 +579,11 @@ Target.create "PackMiddleware" (fun _ ->
 )
 
 Target.create "PublishNpm" (fun _ ->
-    let binDir, prjDir = "bin/npm", "src/FSharp.Data.GraphQL.Client"
+    let binDir, prjDir = "bin/npm", "src/Pure.GraphQL.Client"
     Shell.cleanDir binDir
 
-    !! ("src/FSharp.Data.GraphQL.Client" </> "*.fsproj")
-    |> MSBuild.run id "bin/FSharp.Data.GraphQL.Client" "Build" [ "Configuration", "Build"; "DefineConstants", "FABLE" ]
+    !! ("src/Pure.GraphQL.Client" </> "*.fsproj")
+    |> MSBuild.run id "bin/Pure.GraphQL.Client" "Build" [ "Configuration", "Build"; "DefineConstants", "FABLE" ]
     |> ignore
 
     Shell.copyDir binDir (prjDir </> "bin" </> "Release") (fun _ -> true)

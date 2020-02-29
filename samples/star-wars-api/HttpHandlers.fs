@@ -67,18 +67,20 @@ module HttpHandlers =
         
         let query =
             data |> Option.bind (fun data ->
-                if data.ContainsKey("query")
+                let found, query = data.TryGetValue("query")
+                if found
                 then
-                    match data.["query"] with
+                    match query with
                     | :? string as x -> Some x
                     | _ -> failwith "Failure deserializing repsonse. Could not read query - it is not stringified in request."
                 else None)
         
         let variables =
             data |> Option.bind (fun data ->
-                if data.ContainsKey("variables")
+                let found, variables = data.TryGetValue("variables")
+                if found
                 then
-                    match data.["variables"] with
+                    match variables with
                     | null -> None
                     | :? string as x -> deserialize x
                     | :? Map<string, obj> as x -> Some x

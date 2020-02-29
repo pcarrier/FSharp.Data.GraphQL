@@ -455,7 +455,7 @@ and FieldExecuteCompiler = FieldDef -> ExecuteField
 /// A field execute map object.
 /// Field execute maps are mutable objects built to compile fields at runtime.
 and FieldExecuteMap(compiler : FieldExecuteCompiler) =
-    let map = new Dictionary<string * string, ExecuteField * InputFieldDef []>()
+    let dict = new Dictionary<string * string, ExecuteField * InputFieldDef []>()
 
     let getKey typeName fieldName =
         if List.exists ((=) fieldName) ["__schema"; "__type"; "__typename" ]
@@ -476,9 +476,9 @@ and FieldExecuteMap(compiler : FieldExecuteCompiler) =
         let key = typeName, def.Name
         let compiled = compiler def
         let args = def.Args
-        match map.ContainsKey(key), overwrite with
-        | true, true -> map.Remove(key) |> ignore; map.Add(key, (compiled, args))
-        | false, _ -> map.Add(key, (compiled, args))
+        match dict.ContainsKey(key), overwrite with
+        | true, true -> dict.Remove(key) |> ignore; dict.Add(key, (compiled, args))
+        | false, _ -> dict.Add(key, (compiled, args))
         | _ -> ()
 
     /// <summary>
@@ -497,7 +497,8 @@ and FieldExecuteMap(compiler : FieldExecuteCompiler) =
     /// <param name="fieldName">The field name of the object that has the field that needs to be executed.</param>
     member __.GetExecute(typeName: string, fieldName: string) =
         let key = getKey typeName fieldName
-        if map.ContainsKey(key) then fst map.[key] else Unchecked.defaultof<ExecuteField>
+        let found, (exec, _) = dict.TryGetValue(key)
+        if found then exec else Unchecked.defaultof<ExecuteField>
 
     /// <summary>
     /// Gets the field arguments based on the name of the type and the name of the field.
@@ -506,16 +507,17 @@ and FieldExecuteMap(compiler : FieldExecuteCompiler) =
     /// <param name="fieldName">The field name of the object that has the field that needs to be executed.</param>
     member __.GetArgs(typeName : string, fieldName : string) =
         let key = getKey typeName fieldName
-        if map.ContainsKey(key) then snd map.[key] else Unchecked.defaultof<InputFieldDef []>
+        let found, (_, args) = dict.TryGetValue(key)
+        if found then args else Unchecked.defaultof<InputFieldDef []>
 
     interface IEnumerable<string * string * ExecuteField> with
         member __.GetEnumerator() =
-            let seq = map |> Seq.map(fun kvp -> fst kvp.Key, snd kvp.Key, fst kvp.Value)
+            let seq = dict |> Seq.map(fun kvp -> fst kvp.Key, snd kvp.Key, fst kvp.Value)
             seq.GetEnumerator()
 
     interface IEnumerable with
         member __.GetEnumerator() =
-            let seq = map |> Seq.map(fun kvp -> fst kvp.Value)
+            let seq = dict |> Seq.map(fun kvp -> fst kvp.Value)
             upcast seq.GetEnumerator()
 
 /// Root of GraphQL type system. All type definitions use TypeDef as
