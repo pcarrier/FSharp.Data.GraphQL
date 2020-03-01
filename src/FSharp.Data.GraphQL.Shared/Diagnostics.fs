@@ -1,4 +1,4 @@
-﻿namespace FSharp.Data.GraphQL
+﻿namespace Pure.GraphQL
 
 /// Contains tracing operations to use when DEBUG constant is defined.
 module Tracer =

@@ -1,7 +1,7 @@
-﻿namespace FSharp.Data.GraphQL.IntegrationTests.Server
+﻿namespace Pure.GraphQL.IntegrationTests.Server
 
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Types
+open Pure.GraphQL
+open Pure.GraphQL.Types
 open System.Text
 
 type Root =

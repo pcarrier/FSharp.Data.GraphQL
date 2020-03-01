@@ -2,7 +2,7 @@
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
 [<AutoOpen>]
-module FSharp.Data.GraphQL.BenchmarkProlog
+module Pure.GraphQL.BenchmarkProlog
 
 open BenchmarkDotNet.Configs
 open BenchmarkDotNet.Columns

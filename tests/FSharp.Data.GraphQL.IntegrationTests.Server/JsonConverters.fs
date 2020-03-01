@@ -1,4 +1,4 @@
-﻿namespace FSharp.Data.GraphQL.IntegrationTests.Server
+﻿namespace Pure.GraphQL.IntegrationTests.Server
 
 open System.Collections.Generic
 open Newtonsoft.Json

@@ -1,4 +1,4 @@
-﻿namespace FSharp.Data.GraphQL.IntegrationTests.Server
+﻿namespace Pure.GraphQL.IntegrationTests.Server
 
 open System
 open System.Text
@@ -6,7 +6,7 @@ open Newtonsoft.Json
 open Newtonsoft.Json.Linq
 open Newtonsoft.Json.Serialization
 open System.Collections.Generic
-open FSharp.Data.GraphQL
+open Pure.GraphQL
 
 [<AutoOpen>]
 module Helpers =

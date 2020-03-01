@@ -1,8 +1,8 @@
-﻿module FSharp.Data.GraphQL.IntegrationTests.LocalProviderTests
+﻿module Pure.GraphQL.IntegrationTests.LocalProviderTests
 
 open Xunit
 open Helpers
-open FSharp.Data.GraphQL
+open Pure.GraphQL
 
 let [<Literal>] ServerUrl = "http://localhost:8085"
 

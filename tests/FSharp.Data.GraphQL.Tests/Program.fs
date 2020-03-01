@@ -1,4 +1,4 @@
-namespace FSharp.Data.GraphQL.Tests
+namespace Pure.GraphQL.Tests
 
 open System.Threading
 open Xunit

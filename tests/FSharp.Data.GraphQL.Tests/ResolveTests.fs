@@ -1,14 +1,14 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-module FSharp.Data.GraphQL.Tests.ResolveTests
+module Pure.GraphQL.Tests.ResolveTests
 
 open System
 open Xunit
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Parser
-open FSharp.Data.GraphQL.Execution
+open Pure.GraphQL
+open Pure.GraphQL.Types
+open Pure.GraphQL.Parser
+open Pure.GraphQL.Execution
 
 type TestData = 
     { Test: string }

@@ -1,11 +1,11 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
-module FSharp.Data.GraphQL.Tests.TypeValidationTests
+module Pure.GraphQL.Tests.TypeValidationTests
 
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Validation
-open FSharp.Data.GraphQL.Validation.Types
-open FSharp.Data.GraphQL.Types
+open Pure.GraphQL
+open Pure.GraphQL.Validation
+open Pure.GraphQL.Validation.Types
+open Pure.GraphQL.Types
 open Xunit
 
 type ITestInterface = 

@@ -2,15 +2,15 @@
 /// Copyright (c) 2015-Mar 2016 Kevin Thompson @kthompson
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-module FSharp.Data.GraphQL.Tests.CoercionTests
+module Pure.GraphQL.Tests.CoercionTests
 
 #nowarn "25"
 
 open System
 open Xunit
-open FSharp.Data.GraphQL.Ast
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Types.Patterns
+open Pure.GraphQL.Ast
+open Pure.GraphQL.Types
+open Pure.GraphQL.Types.Patterns
 
 let private testCoercion graphQLType (expected: 't) actual =
     let (Scalar scalar) = graphQLType

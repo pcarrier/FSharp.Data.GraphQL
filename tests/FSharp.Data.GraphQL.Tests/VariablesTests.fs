@@ -1,17 +1,17 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-module FSharp.Data.GraphQL.Tests.VariablesTests
+module Pure.GraphQL.Tests.VariablesTests
 
 #nowarn "25"
 
 open System
 open Xunit
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Ast
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Parser
-open FSharp.Data.GraphQL.Execution
+open Pure.GraphQL
+open Pure.GraphQL.Ast
+open Pure.GraphQL.Types
+open Pure.GraphQL.Parser
+open Pure.GraphQL.Execution
 
 let TestComplexScalar =
   Define.Scalar(

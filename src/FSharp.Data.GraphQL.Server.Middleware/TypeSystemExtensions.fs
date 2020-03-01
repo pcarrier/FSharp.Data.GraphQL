@@ -1,6 +1,6 @@
-namespace FSharp.Data.GraphQL.Server.Middleware
+namespace Pure.GraphQL.Server.Middleware
 
-open FSharp.Data.GraphQL.Types
+open Pure.GraphQL.Types
 
 /// Contains extensions for the type system.
 [<AutoOpen>]

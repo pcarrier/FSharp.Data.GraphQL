@@ -1,15 +1,15 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
-module FSharp.Data.GraphQL.Tests.AbstractionTests
+module Pure.GraphQL.Tests.AbstractionTests
 
 #nowarn "40"
 
 open Xunit
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Parser
-open FSharp.Data.GraphQL.Execution
-open FSharp.Data.GraphQL.Relay
+open Pure.GraphQL
+open Pure.GraphQL.Types
+open Pure.GraphQL.Parser
+open Pure.GraphQL.Execution
+open Pure.GraphQL.Relay
 
 type IPet =
     interface

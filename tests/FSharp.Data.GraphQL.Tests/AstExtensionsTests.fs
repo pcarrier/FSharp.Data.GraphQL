@@ -1,11 +1,11 @@
 /// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-module FSharp.Data.GraphQL.Tests.AstExtensionsTests
+module Pure.GraphQL.Tests.AstExtensionsTests
 
 open Xunit
-open FSharp.Data.GraphQL.Parser
-open FSharp.Data.GraphQL.Ast.Extensions
+open Pure.GraphQL.Parser
+open Pure.GraphQL.Ast.Extensions
 
 /// Converts line breaks to a single standard to avoid different SO line break termination issues.
 let normalize (str : string) = str.Replace("\r\n", "\n")

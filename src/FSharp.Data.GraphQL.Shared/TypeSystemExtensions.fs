@@ -1,7 +1,7 @@
-namespace FSharp.Data.GraphQL.Types
+namespace Pure.GraphQL.Types
 
 open System
-open FSharp.Data.GraphQL.Types
+open Pure.GraphQL.Types
 open Microsoft.FSharp.Quotations
 open Microsoft.FSharp.Quotations.Patterns
 open Microsoft.FSharp.Linq.RuntimeHelpers

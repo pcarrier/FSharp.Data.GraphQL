@@ -3,24 +3,24 @@ namespace System
 open System.Reflection
 open System.Runtime.CompilerServices
 
-[<assembly: AssemblyTitleAttribute("FSharp.Data.GraphQL.Shared")>]
+[<assembly: AssemblyTitleAttribute("Pure.GraphQL.Shared")>]
 [<assembly: AssemblyProductAttribute("Pure.GraphQL")>]
 [<assembly: AssemblyDescriptionAttribute("FSharp implementation of Facebook GraphQL query language")>]
 [<assembly: AssemblyVersionAttribute("1.0.2")>]
 [<assembly: AssemblyFileVersionAttribute("1.0.2")>]
-[<assembly: InternalsVisibleToAttribute("FSharp.Data.GraphQL.Server")>]
-[<assembly: InternalsVisibleToAttribute("FSharp.Data.GraphQL.Client")>]
-[<assembly: InternalsVisibleToAttribute("FSharp.Data.GraphQL.Client.DesignTime")>]
-[<assembly: InternalsVisibleToAttribute("FSharp.Data.GraphQL.Tests")>]
+[<assembly: InternalsVisibleToAttribute("Pure.GraphQL.Server")>]
+[<assembly: InternalsVisibleToAttribute("Pure.GraphQL.Client")>]
+[<assembly: InternalsVisibleToAttribute("Pure.GraphQL.Client.DesignTime")>]
+[<assembly: InternalsVisibleToAttribute("Pure.GraphQL.Tests")>]
 do ()
 
 module internal AssemblyVersionInformation =
-    let [<Literal>] AssemblyTitle = "FSharp.Data.GraphQL.Shared"
+    let [<Literal>] AssemblyTitle = "Pure.GraphQL.Shared"
     let [<Literal>] AssemblyProduct = "Pure.GraphQL"
     let [<Literal>] AssemblyDescription = "FSharp implementation of Facebook GraphQL query language"
     let [<Literal>] AssemblyVersion = "1.0.2"
     let [<Literal>] AssemblyFileVersion = "1.0.2"
-    let [<Literal>] InternalsVisibleTo = "FSharp.Data.GraphQL.Server"
-    let [<Literal>] InternalsVisibleTo_1 = "FSharp.Data.GraphQL.Client"
-    let [<Literal>] InternalsVisibleTo_2 = "FSharp.Data.GraphQL.Client.DesignTime"
-    let [<Literal>] InternalsVisibleTo_3 = "FSharp.Data.GraphQL.Tests"
+    let [<Literal>] InternalsVisibleTo = "Pure.GraphQL.Server"
+    let [<Literal>] InternalsVisibleTo_1 = "Pure.GraphQL.Client"
+    let [<Literal>] InternalsVisibleTo_2 = "Pure.GraphQL.Client.DesignTime"
+    let [<Literal>] InternalsVisibleTo_3 = "Pure.GraphQL.Tests"

@@ -2,14 +2,14 @@
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
 [<AutoOpen>]
-module internal FSharp.Data.GraphQL.Values
+module internal Pure.GraphQL.Values
 
 open System
 open System.Reflection
 open System.Collections.Generic
-open FSharp.Data.GraphQL.Ast
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Types.Patterns
+open Pure.GraphQL.Ast
+open Pure.GraphQL.Types
+open Pure.GraphQL.Types.Patterns
 
 /// Tries to convert type defined in AST into one of the type defs known in schema.
 let inline tryConvertAst schema ast =

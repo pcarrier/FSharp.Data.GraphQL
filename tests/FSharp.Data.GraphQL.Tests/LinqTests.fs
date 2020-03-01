@@ -1,14 +1,14 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
-module FSharp.Data.GraphQL.Tests.LinqTests
+module Pure.GraphQL.Tests.LinqTests
 
 open Xunit
 open System
 open System.Linq
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Linq
-open FSharp.Data.GraphQL.Execution
+open Pure.GraphQL
+open Pure.GraphQL.Types
+open Pure.GraphQL.Linq
+open Pure.GraphQL.Execution
 
 type Contact = 
     { Email : string }

@@ -1,8 +1,8 @@
-﻿module FSharp.Data.GraphQL.IntegrationTests.Server.Variables
+﻿module Pure.GraphQL.IntegrationTests.Server.Variables
 
 open System
-open FSharp.Data.GraphQL.Ast
-open FSharp.Data.GraphQL.Types
+open Pure.GraphQL.Ast
+open Pure.GraphQL.Types
 open Newtonsoft.Json.Linq
 
 let private makeOption (t : Type) = typedefof<_ option>.MakeGenericType(t)

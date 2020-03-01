@@ -1,20 +1,20 @@
 /// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-namespace FSharp.Data.GraphQL.Client
+namespace Pure.GraphQL.Client
 
 open System.Reflection
 open FSharp.Core.CompilerServices
 open ProviderImplementation.ProvidedTypes
-open FSharp.Data.GraphQL
+open Pure.GraphQL
 
 [<TypeProvider>]
 type GraphQLTypeProvider (config) as this =
     inherit TypeProviderForNamespaces(config, 
-                                      assemblyReplacementMap = ["FSharp.Data.GraphQL.Client.DesignTime", "FSharp.Data.GraphQL.Client"],
+                                      assemblyReplacementMap = ["Pure.GraphQL.Client.DesignTime", "Pure.GraphQL.Client"],
                                       addDefaultProbingLocation = true)
 
-    let ns = "FSharp.Data.GraphQL"
+    let ns = "Pure.GraphQL"
     let asm = Assembly.GetExecutingAssembly()
     
     do this.AddNamespace(ns, [Provider.makeProvidedType(asm, ns, config.ResolutionFolder)])

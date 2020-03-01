@@ -1,4 +1,4 @@
-﻿namespace FSharp.Data.GraphQL.IntegrationTests.Server
+﻿namespace Pure.GraphQL.IntegrationTests.Server
 
 open System
 open Microsoft.AspNetCore.WebUtilities
@@ -6,8 +6,8 @@ open Newtonsoft.Json
 open System.Collections
 open System.Collections.Generic
 open Newtonsoft.Json.Linq
-open FSharp.Data.GraphQL.Ast
-open FSharp.Data.GraphQL
+open Pure.GraphQL.Ast
+open Pure.GraphQL
 
 type GraphQLMultipartSection =
     | Form of FormMultipartSection

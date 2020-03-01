@@ -1,15 +1,15 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-namespace FSharp.Data.GraphQL.Client
+namespace Pure.GraphQL.Client
 
 open System
 open Microsoft.FSharp.Reflection
 open System.Reflection
 open System.Collections.Generic
 open System.Globalization
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Client.ReflectionPatterns
+open Pure.GraphQL
+open Pure.GraphQL.Client.ReflectionPatterns
 
 module Serialization =
     let private makeOption t (value : obj) =

@@ -1,7 +1,7 @@
-namespace FSharp.Data.GraphQL.Server.Middleware
+namespace Pure.GraphQL.Server.Middleware
 
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Ast
+open Pure.GraphQL.Types
+open Pure.GraphQL.Ast
 
 /// Contains customized schema definitions for extensibility features.
 [<AutoOpen>]

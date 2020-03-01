@@ -1,10 +1,10 @@
-module FSharp.Data.GraphQL.Tests.ResponseJsonTests
+module Pure.GraphQL.Tests.ResponseJsonTests
 
 open System
 open Xunit
 open Helpers
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Client
+open Pure.GraphQL
+open Pure.GraphQL.Client
 
 // Local provider should be able to be created from local introspection json file.
 // This schema is adjusted to have some less common type names in order to test them.

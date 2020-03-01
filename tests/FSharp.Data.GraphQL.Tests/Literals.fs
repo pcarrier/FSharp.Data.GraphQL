@@ -1,4 +1,4 @@
-module FSharp.Data.GraphQL.Tests.Literals
+module Pure.GraphQL.Tests.Literals
 
 let [<Literal>] IntrospectionSchemaJson = """{
     "documentId": 869718943,

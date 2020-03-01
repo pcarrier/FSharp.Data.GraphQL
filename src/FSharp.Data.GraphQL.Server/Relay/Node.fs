@@ -1,12 +1,12 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-namespace FSharp.Data.GraphQL.Relay
+namespace Pure.GraphQL.Relay
 
 open System    
 open System.Reflection
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Types
+open Pure.GraphQL
+open Pure.GraphQL.Types
 
 [<AutoOpen>]
 module GlobalId =
@@ -39,7 +39,7 @@ module GlobalId =
             | false, _ -> 
                 failwithf "Object of type '%s' was none of the defined types [%A]" (o.GetType().FullName) (map.Value.Keys)
     
-    type FSharp.Data.GraphQL.Types.SchemaDefinitions.Define with
+    type Pure.GraphQL.Types.SchemaDefinitions.Define with
         
         /// Field definition for the Relay GlobalID field for the chosen type.
         static member GlobalIdField (typeName: string, resolve: (ResolveFieldContext -> 'In -> string)) =

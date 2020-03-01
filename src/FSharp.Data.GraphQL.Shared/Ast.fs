@@ -1,6 +1,6 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
-namespace FSharp.Data.GraphQL.Ast
+namespace Pure.GraphQL.Ast
 
 //NOTE: For references, see https://facebook.github.io/graphql/
 

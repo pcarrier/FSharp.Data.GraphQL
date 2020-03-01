@@ -1,4 +1,4 @@
-﻿namespace FSharp.Data.GraphQL.Validation
+﻿namespace Pure.GraphQL.Validation
 
 type ValidationResult<'Err> =
     | Success

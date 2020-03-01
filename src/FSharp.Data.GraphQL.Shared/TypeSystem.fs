@@ -1,16 +1,16 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
-namespace FSharp.Data.GraphQL.Types
+namespace Pure.GraphQL.Types
 
 open System
 open System.Reflection
 open System.Collections
 open System.Collections.Concurrent
 open System.Collections.Generic
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Validation
-open FSharp.Data.GraphQL.Ast
-open FSharp.Data.GraphQL.Extensions
+open Pure.GraphQL
+open Pure.GraphQL.Validation
+open Pure.GraphQL.Ast
+open Pure.GraphQL.Extensions
 open FSharp.Quotations
 open FSharp.Quotations.Patterns
 open FSharp.Reflection

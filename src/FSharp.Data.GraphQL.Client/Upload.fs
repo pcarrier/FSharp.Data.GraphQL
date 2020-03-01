@@ -1,11 +1,11 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-namespace FSharp.Data.GraphQL
+namespace Pure.GraphQL
 
 open System
 open System.IO
-open FSharp.Data.GraphQL.Client
+open Pure.GraphQL.Client
 
 /// The base type for all GraphQLProvider upload types.
 /// Upload types are used in GraphQL multipart request spec, mostly for file uploading features.

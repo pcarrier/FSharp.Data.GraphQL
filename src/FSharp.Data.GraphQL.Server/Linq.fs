@@ -1,6 +1,6 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
-module FSharp.Data.GraphQL.Linq
+module Pure.GraphQL.Linq
 
 open System
 open System.Collections
@@ -8,8 +8,8 @@ open System.Collections.Generic
 open System.Linq
 open System.Linq.Expressions
 open FSharp.Reflection
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Types.Patterns
+open Pure.GraphQL.Types
+open Pure.GraphQL.Types.Patterns
 open FSharp.Quotations
 
 /// Record defining an argument resolved as part of the property tracker.

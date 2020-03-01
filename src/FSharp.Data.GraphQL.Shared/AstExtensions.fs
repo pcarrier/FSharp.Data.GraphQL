@@ -1,9 +1,9 @@
 /// Extensions for Ast.Document.
-module FSharp.Data.GraphQL.Ast.Extensions
+module Pure.GraphQL.Ast.Extensions
 
 open System
 open System.Text
-open FSharp.Data.GraphQL.Ast
+open Pure.GraphQL.Ast
 open System.Globalization
 
 type Path = string list

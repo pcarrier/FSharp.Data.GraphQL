@@ -1,13 +1,13 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-module FSharp.Data.GraphQL.Tests.SchemaTests
+module Pure.GraphQL.Tests.SchemaTests
 
 open System
 open Xunit
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Execution
+open Pure.GraphQL
+open Pure.GraphQL.Types
+open Pure.GraphQL.Execution
 
 [<Fact>]
 let ``Object type should be able to merge fields with matching signatures from different interfaces`` () = 

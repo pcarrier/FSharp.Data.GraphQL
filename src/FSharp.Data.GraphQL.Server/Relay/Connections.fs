@@ -1,10 +1,10 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-namespace FSharp.Data.GraphQL.Relay
+namespace Pure.GraphQL.Relay
 
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Types.Patterns
+open Pure.GraphQL.Types
+open Pure.GraphQL.Types.Patterns
 
 /// Record used to represent Relay node with cursor identifier.
 type Edge<'Node> = 

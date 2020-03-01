@@ -1,19 +1,19 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-namespace FSharp.Data.GraphQL
+namespace Pure.GraphQL
 
 open System
 open FSharp.Core
 open System.Reflection
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Client
-open FSharp.Data.GraphQL.Client.ReflectionPatterns
-open FSharp.Data.GraphQL.Ast
-open FSharp.Data.GraphQL.Validation
+open Pure.GraphQL
+open Pure.GraphQL.Client
+open Pure.GraphQL.Client.ReflectionPatterns
+open Pure.GraphQL.Ast
+open Pure.GraphQL.Validation
 open System.Collections.Generic
-open FSharp.Data.GraphQL.Types.Introspection
-open FSharp.Data.GraphQL.Ast.Extensions
+open Pure.GraphQL.Types.Introspection
+open Pure.GraphQL.Ast.Extensions
 open ProviderImplementation.ProvidedTypes
 open Microsoft.FSharp.Quotations
 open Microsoft.FSharp.Reflection

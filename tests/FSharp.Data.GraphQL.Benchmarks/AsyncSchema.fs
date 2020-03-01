@@ -1,11 +1,11 @@
-namespace FSharp.Data.GraphQL.Benchmarks
+namespace Pure.GraphQL.Benchmarks
 
 #nowarn "40"
 
 open System.Threading
 
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Server.Middleware
+open Pure.GraphQL.Types
+open Pure.GraphQL.Server.Middleware
 
 [<RequireQualifiedAccess>]
 module AsyncSchemaDefinition =

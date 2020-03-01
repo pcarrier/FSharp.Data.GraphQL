@@ -1,7 +1,7 @@
-namespace FSharp.Data.GraphQL.Server.Middleware
+namespace Pure.GraphQL.Server.Middleware
 
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL
+open Pure.GraphQL.Types
+open Pure.GraphQL
 
 /// Contains extensions for the Define module.
 [<AutoOpen>]

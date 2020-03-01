@@ -1,18 +1,18 @@
-﻿namespace FSharp.Data.GraphQL.IntegrationTests.Server
+﻿namespace Pure.GraphQL.IntegrationTests.Server
 
 open System.Text
 open Giraffe
 open Microsoft.AspNetCore.Http
 open Newtonsoft.Json
-open FSharp.Data.GraphQL.Execution
+open Pure.GraphQL.Execution
 open System.IO
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Types
+open Pure.GraphQL
+open Pure.GraphQL.Types
 open FSharp.Control.Tasks
 open Newtonsoft.Json.Linq
 open Giraffe.HttpStatusCodeHandlers.RequestErrors
 open Microsoft.AspNetCore.WebUtilities
-open FSharp.Data.GraphQL.Ast
+open Pure.GraphQL.Ast
 
 type HttpHandler = HttpFunc -> HttpContext -> HttpFuncResult
 

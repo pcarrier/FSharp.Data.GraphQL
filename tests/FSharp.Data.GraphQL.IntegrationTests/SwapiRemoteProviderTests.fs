@@ -1,8 +1,8 @@
-﻿module FSharp.Data.GraphQL.IntegrationTests.SwapiRemoteProviderTests
+﻿module Pure.GraphQL.IntegrationTests.SwapiRemoteProviderTests
 
 open Xunit
 open Helpers
-open FSharp.Data.GraphQL
+open Pure.GraphQL
 
 type Provider = GraphQLProvider<"http://localhost:8084">
 

@@ -1,15 +1,15 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-namespace FSharp.Data.GraphQL.Validation
+namespace Pure.GraphQL.Validation
 
 open System.Collections.Generic
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Extensions
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Types.Patterns
-open FSharp.Data.GraphQL.Ast
-open FSharp.Data.GraphQL.Types.Introspection
+open Pure.GraphQL
+open Pure.GraphQL.Extensions
+open Pure.GraphQL.Types
+open Pure.GraphQL.Types.Patterns
+open Pure.GraphQL.Ast
+open Pure.GraphQL.Types.Introspection
 
 module Types =
     let validateImplements (objdef: ObjectDef) (idef: InterfaceDef) =

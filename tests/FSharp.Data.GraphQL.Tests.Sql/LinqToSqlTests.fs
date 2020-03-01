@@ -1,17 +1,17 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-module FSharp.Data.GraphQL.Tests.LinqToSqlTests
+module Pure.GraphQL.Tests.LinqToSqlTests
 
 open System
 open System.Linq
 open Xunit
 open FSharp.Data.TypeProviders
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Parser
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Execution
-open FSharp.Data.GraphQL.Linq
+open Pure.GraphQL
+open Pure.GraphQL.Parser
+open Pure.GraphQL.Types
+open Pure.GraphQL.Execution
+open Pure.GraphQL.Linq
 
 type Db = SqlDataConnection<"Server=.;Database=NORTHWND;Trusted_Connection=True;">
 

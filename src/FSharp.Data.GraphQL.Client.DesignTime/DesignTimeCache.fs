@@ -1,14 +1,14 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-namespace FSharp.Data.GraphQL
+namespace Pure.GraphQL
 
 #if IS_DESIGNTIME
 
 open System
-open FSharp.Data.GraphQL.Client
+open Pure.GraphQL.Client
 open ProviderImplementation.ProvidedTypes
-open FSharp.Data.GraphQL.Validation
+open Pure.GraphQL.Validation
 
 type internal ProviderKey =
     { IntrospectionLocation : IntrospectionLocation

@@ -1,12 +1,12 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
-module FSharp.Data.GraphQL.Introspection
+module Pure.GraphQL.Introspection
 
 #nowarn "40"
 
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Types.Introspection
-open FSharp.Data.GraphQL.Extensions
+open Pure.GraphQL.Types
+open Pure.GraphQL.Types.Introspection
+open Pure.GraphQL.Extensions
 open System.Reflection
 
 let internal getFieldValue name o =

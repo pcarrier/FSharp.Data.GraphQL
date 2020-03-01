@@ -1,8 +1,8 @@
-﻿module FSharp.Data.GraphQL.IntegrationTests.SwapiLocalProviderTests
+﻿module Pure.GraphQL.IntegrationTests.SwapiLocalProviderTests
 
 open Xunit
 open Helpers
-open FSharp.Data.GraphQL
+open Pure.GraphQL
 
 // Local provider should be able to be created from local introspection json file.
 type Provider = GraphQLProvider<"introspection.json">

@@ -1,8 +1,8 @@
-﻿module FSharp.Data.GraphQL.Tests.NameValueLookupTests
+﻿module Pure.GraphQL.Tests.NameValueLookupTests
 
 open Helpers
 open Xunit
-open FSharp.Data.GraphQL.Execution
+open Pure.GraphQL.Execution
 
 [<Fact>]
 let ``Lookups containing different lists as inner items should not be equal`` () =

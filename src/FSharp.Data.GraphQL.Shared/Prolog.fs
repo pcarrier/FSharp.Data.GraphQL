@@ -1,7 +1,7 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-namespace FSharp.Data.GraphQL
+namespace Pure.GraphQL
 
 open System
 open System.Reflection

@@ -1,13 +1,13 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-module FSharp.Data.GraphQL.Tests.ExecutionTests
+module Pure.GraphQL.Tests.ExecutionTests
 
 open Xunit
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Parser
-open FSharp.Data.GraphQL.Execution
+open Pure.GraphQL
+open Pure.GraphQL.Types
+open Pure.GraphQL.Parser
+open Pure.GraphQL.Execution
 open Helpers
 
 #nowarn "40"

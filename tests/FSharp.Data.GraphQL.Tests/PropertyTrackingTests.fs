@@ -1,13 +1,13 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
-module FSharp.Data.GraphQL.Tests.PropertyTrackingTests
+module Pure.GraphQL.Tests.PropertyTrackingTests
 
 open System
 open System.Linq
 open System.Linq.Expressions
 open FSharp.Linq
 open Microsoft.FSharp.Quotations
-open FSharp.Data.GraphQL.Linq
+open Pure.GraphQL.Linq
 open Xunit
 
 type DeepestType = 

@@ -1,4 +1,4 @@
-﻿namespace FSharp.Data.GraphQL.IntegrationTests.Server
+﻿namespace Pure.GraphQL.IntegrationTests.Server
 
 open Microsoft.AspNetCore.Builder
 open Microsoft.Extensions.Configuration

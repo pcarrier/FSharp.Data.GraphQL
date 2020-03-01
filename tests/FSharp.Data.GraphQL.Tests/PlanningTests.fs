@@ -1,18 +1,18 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
-module FSharp.Data.GraphQL.Tests.PlanningTests
+module Pure.GraphQL.Tests.PlanningTests
 
 #nowarn "25"
 #nowarn "40"
 
 open System
 open Xunit
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Ast
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Parser
-open FSharp.Data.GraphQL.Planning
-open FSharp.Data.GraphQL.Execution
+open Pure.GraphQL
+open Pure.GraphQL.Ast
+open Pure.GraphQL.Types
+open Pure.GraphQL.Parser
+open Pure.GraphQL.Planning
+open Pure.GraphQL.Execution
 
 type Person = 
     { firstName : string

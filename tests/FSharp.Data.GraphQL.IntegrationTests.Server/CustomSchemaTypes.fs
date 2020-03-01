@@ -1,8 +1,8 @@
-﻿namespace FSharp.Data.GraphQL.IntegrationTests.Server
+﻿namespace Pure.GraphQL.IntegrationTests.Server
 
 open System.IO
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Ast
+open Pure.GraphQL.Types
+open Pure.GraphQL.Ast
 
 /// Represents a file in a GraphQL file upload.
 type File =

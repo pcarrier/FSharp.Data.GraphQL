@@ -1,9 +1,9 @@
-namespace FSharp.Data.GraphQL.Benchmarks
+namespace Pure.GraphQL.Benchmarks
 
 #nowarn "40"
 
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Server.Middleware
+open Pure.GraphQL.Types
+open Pure.GraphQL.Server.Middleware
 
 type Person = 
     { Id : string

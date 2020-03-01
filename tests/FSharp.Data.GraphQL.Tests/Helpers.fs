@@ -7,7 +7,7 @@ open System
 open System.Linq
 open System.Collections.Generic
 open Xunit
-open FSharp.Data.GraphQL.Execution
+open Pure.GraphQL.Execution
 open System.Threading
 
 let isType<'a> actual = Assert.IsAssignableFrom<'a>(actual)
@@ -71,7 +71,7 @@ let ensureDirect (result : GQLResponse) (onDirect : Output -> Error list -> unit
 open Newtonsoft.Json
 open Newtonsoft.Json.Serialization
 open Microsoft.FSharp.Reflection
-open FSharp.Data.GraphQL.Parser
+open Pure.GraphQL.Parser
 
 type internal OptionConverter() =
     inherit JsonConverter()

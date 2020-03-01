@@ -1,10 +1,10 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-module FSharp.Data.GraphQL.Tests.AsyncValTests
+module Pure.GraphQL.Tests.AsyncValTests
 
 open System
-open FSharp.Data.GraphQL
+open Pure.GraphQL
 open Xunit
 
 [<Fact>]

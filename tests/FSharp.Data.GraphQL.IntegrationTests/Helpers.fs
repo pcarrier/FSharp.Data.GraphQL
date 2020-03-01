@@ -1,9 +1,9 @@
-module FSharp.Data.GraphQL.IntegrationTests.Helpers
+module Pure.GraphQL.IntegrationTests.Helpers
 
 open Xunit
 open System.Text
 open System.Collections.Generic
-open FSharp.Data.GraphQL
+open Pure.GraphQL
 
 let normalize (x : string) =
     x.Replace("\r\n", "\n").Split([|'\n'|])

@@ -1,11 +1,11 @@
-﻿namespace FSharp.Data.GraphQL
+﻿namespace Pure.GraphQL
 
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Execution
-open FSharp.Data.GraphQL.Ast
-open FSharp.Data.GraphQL.Validation
-open FSharp.Data.GraphQL.Parser
-open FSharp.Data.GraphQL.Planning
+open Pure.GraphQL.Types
+open Pure.GraphQL.Execution
+open Pure.GraphQL.Ast
+open Pure.GraphQL.Validation
+open Pure.GraphQL.Parser
+open Pure.GraphQL.Planning
 
 /// A function signature that represents a middleware for schema compile phase.
 /// I takes two arguments: A schema compile context, containing all the data used for the

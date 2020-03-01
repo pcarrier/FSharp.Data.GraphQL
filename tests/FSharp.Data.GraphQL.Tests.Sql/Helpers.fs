@@ -6,10 +6,10 @@ module Helpers
 open System
 open System.Collections.Generic
 open Xunit
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Types.Introspection
-open FSharp.Data.GraphQL.Execution
+open Pure.GraphQL
+open Pure.GraphQL.Types
+open Pure.GraphQL.Types.Introspection
+open Pure.GraphQL.Execution
 
 let equals (expected : 'x) (actual : 'x) = 
     Assert.True((actual = expected), sprintf "expected %+A\nbut got %+A" expected actual)

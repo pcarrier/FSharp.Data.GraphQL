@@ -1,15 +1,15 @@
 /// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-namespace FSharp.Data.GraphQL
+namespace Pure.GraphQL
 
 open System.Collections.Generic
 open System.Reactive.Linq
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Types.Patterns
-open FSharp.Data.GraphQL.Types.Introspection
-open FSharp.Data.GraphQL.Introspection
-open FSharp.Data.GraphQL.Helpers
+open Pure.GraphQL.Types
+open Pure.GraphQL.Types.Patterns
+open Pure.GraphQL.Types.Introspection
+open Pure.GraphQL.Introspection
+open Pure.GraphQL.Helpers
 open System.Reactive.Subjects
 
 type private Channel = ISubject<obj>

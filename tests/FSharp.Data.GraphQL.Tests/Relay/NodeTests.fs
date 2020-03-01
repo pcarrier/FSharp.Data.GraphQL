@@ -1,15 +1,15 @@
 /// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-module FSharp.Data.GraphQL.Tests.Relay.NodeTests
+module Pure.GraphQL.Tests.Relay.NodeTests
 
 #nowarn "40"
 
 open System
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Relay
-open FSharp.Data.GraphQL.Execution
+open Pure.GraphQL
+open Pure.GraphQL.Types
+open Pure.GraphQL.Relay
+open Pure.GraphQL.Execution
 
 type Person = { Id: string; Name: string; Age: int } 
 type Car = { Id: string; Model: string; } 

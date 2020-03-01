@@ -1,11 +1,11 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
-module FSharp.Data.GraphQL.AsyncValBenchmark
+module Pure.GraphQL.AsyncValBenchmark
 
 open System
 open BenchmarkDotNet
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Parser
+open Pure.GraphQL
+open Pure.GraphQL.Parser
 
 // TEST 1 - immediatelly return a value
 let asyncReturnImmediate() = 

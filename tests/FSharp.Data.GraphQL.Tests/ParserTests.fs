@@ -2,12 +2,12 @@
 /// Copyright (c) 2015-Mar 2016 Kevin Thompson @kthompson
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-module FSharp.Data.GraphQL.Tests.ParserTests
+module Pure.GraphQL.Tests.ParserTests
 
 open System
 open Xunit
-open FSharp.Data.GraphQL.Ast
-open FSharp.Data.GraphQL.Parser
+open Pure.GraphQL.Ast
+open Pure.GraphQL.Parser
 
 let test ast query =
     let result = parse query

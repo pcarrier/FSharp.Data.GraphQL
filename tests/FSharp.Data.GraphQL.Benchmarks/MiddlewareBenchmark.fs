@@ -1,15 +1,15 @@
 /// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
-module FSharp.Data.GraphQL.MiddlewaresBenchmark
+module Pure.GraphQL.MiddlewaresBenchmark
 
 #nowarn "40"
 
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Parser
+open Pure.GraphQL
+open Pure.GraphQL.Types
+open Pure.GraphQL.Parser
 open BenchmarkDotNet.Attributes
-open FSharp.Data.GraphQL.Benchmarks
-open FSharp.Data.GraphQL.Server.Middleware
+open Pure.GraphQL.Benchmarks
+open Pure.GraphQL.Server.Middleware
 
 [<Config(typeof<GraphQLBenchConfig>); MonoJob; CoreJob>]
 type SimpleExecutionWithMiddlewaresBenchmark() = 

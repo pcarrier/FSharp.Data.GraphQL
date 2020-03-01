@@ -1,6 +1,6 @@
-﻿namespace FSharp.Data.GraphQL.Validation
+﻿namespace Pure.GraphQL.Validation
 
-open FSharp.Data.GraphQL
+open Pure.GraphQL
 open System
 
 type ValidationResultKey =

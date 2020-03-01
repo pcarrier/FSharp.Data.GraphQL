@@ -4,11 +4,11 @@ open Xunit
 open System.Reflection
 open System.Runtime.InteropServices
 
-[<assembly: AssemblyTitle("FSharp.Data.GraphQL.Tests")>]
+[<assembly: AssemblyTitle("Pure.GraphQL.Tests")>]
 [<assembly: AssemblyDescription("")>]
 [<assembly: AssemblyConfiguration("")>]
 [<assembly: AssemblyCompany("Bazinga Technologies Inc")>]
-[<assembly: AssemblyProduct("FSharp.Data.GraphQL.Tests")>]
+[<assembly: AssemblyProduct("Pure.GraphQL.Tests")>]
 [<assembly: AssemblyCopyright("Copyright ©  2016 Bazinga Technologies Inc")>]
 [<assembly: AssemblyTrademark("Bazinga Technologies Inc")>]
 [<assembly: AssemblyCulture("")>]

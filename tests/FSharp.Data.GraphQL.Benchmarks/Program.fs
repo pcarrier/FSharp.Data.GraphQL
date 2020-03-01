@@ -1,10 +1,10 @@
 ﻿module Program
 
 open BenchmarkDotNet.Running
-open FSharp.Data.GraphQL.AsyncValBenchmark
-open FSharp.Data.GraphQL.ParsingBenchmark
-open FSharp.Data.GraphQL.ExecutionBenchmark
-open FSharp.Data.GraphQL.MiddlewareBenchmark
+open Pure.GraphQL.AsyncValBenchmark
+open Pure.GraphQL.ParsingBenchmark
+open Pure.GraphQL.ExecutionBenchmark
+open Pure.GraphQL.MiddlewareBenchmark
 
 let defaultSwitch () = 
     BenchmarkSwitcher [| 

@@ -1,9 +1,9 @@
-namespace FSharp.Data.GraphQL.Server.Middleware
+namespace Pure.GraphQL.Server.Middleware
 
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Types.Patterns
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Execution
+open Pure.GraphQL
+open Pure.GraphQL.Types.Patterns
+open Pure.GraphQL.Types
+open Pure.GraphQL.Execution
 
 type internal QueryWeightMiddleware(threshold : float, reportToMetadata : bool) =
     let middleware (threshold : float) (ctx : ExecutionContext) (next : ExecutionContext -> AsyncVal<GQLResponse>) =

@@ -1,4 +1,4 @@
-﻿namespace FSharp.Data.GraphQL
+﻿namespace Pure.GraphQL
 
 open System
 open System.Collections.Concurrent

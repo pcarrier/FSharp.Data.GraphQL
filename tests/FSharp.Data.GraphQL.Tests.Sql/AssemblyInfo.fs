@@ -1,4 +1,4 @@
-﻿namespace FSharp.Data.GraphQL.Tests.Sql.AssemblyInfo
+﻿namespace Pure.GraphQL.Tests.Sql.AssemblyInfo
 
 open System.Reflection
 open System.Runtime.CompilerServices
@@ -7,11 +7,11 @@ open System.Runtime.InteropServices
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[<assembly: AssemblyTitle("FSharp.Data.GraphQL.Tests.Sql")>]
+[<assembly: AssemblyTitle("Pure.GraphQL.Tests.Sql")>]
 [<assembly: AssemblyDescription("")>]
 [<assembly: AssemblyConfiguration("")>]
 [<assembly: AssemblyCompany("")>]
-[<assembly: AssemblyProduct("FSharp.Data.GraphQL.Tests.Sql")>]
+[<assembly: AssemblyProduct("Pure.GraphQL.Tests.Sql")>]
 [<assembly: AssemblyCopyright("Copyright ©  2016")>]
 [<assembly: AssemblyTrademark("")>]
 [<assembly: AssemblyCulture("")>]

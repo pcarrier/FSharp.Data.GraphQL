@@ -1,14 +1,14 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-module FSharp.Data.GraphQL.Planning
+module Pure.GraphQL.Planning
 
 open System
-open FSharp.Data.GraphQL.Ast
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Types.Patterns
-open FSharp.Data.GraphQL.Types.Introspection
-open FSharp.Data.GraphQL.Introspection
+open Pure.GraphQL.Ast
+open Pure.GraphQL.Types
+open Pure.GraphQL.Types.Patterns
+open Pure.GraphQL.Types.Introspection
+open Pure.GraphQL.Introspection
 
 /// Field definition allowing to access the current type schema of this server.
 let SchemaMetaFieldDef = 

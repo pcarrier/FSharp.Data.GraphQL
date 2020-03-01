@@ -2,9 +2,9 @@
 /// Copyright (c) 2015-Mar 2016 Kevin Thompson @kthompson
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-module FSharp.Data.GraphQL.Parser
+module Pure.GraphQL.Parser
 
-open FSharp.Data.GraphQL.Ast
+open Pure.GraphQL.Ast
 open System
 open FParsec
 

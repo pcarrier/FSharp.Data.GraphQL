@@ -1,10 +1,10 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
 
-module FSharp.Data.GraphQL.Tests.ObservableExtensionsTests
+module Pure.GraphQL.Tests.ObservableExtensionsTests
 
 open Xunit
-open FSharp.Data.GraphQL
+open Pure.GraphQL
 open Helpers
 open System
 

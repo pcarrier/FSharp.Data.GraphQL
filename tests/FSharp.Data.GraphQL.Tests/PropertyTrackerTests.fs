@@ -1,14 +1,14 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
-module FSharp.Data.GraphQL.Tests.PropertyTrackerTests
+module Pure.GraphQL.Tests.PropertyTrackerTests
 
 #nowarn "40"
 
 open Xunit
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Linq
-open FSharp.Data.GraphQL.Relay
+open Pure.GraphQL
+open Pure.GraphQL.Types
+open Pure.GraphQL.Linq
+open Pure.GraphQL.Relay
 
 type Person = { Id: int; FirstName: string; LastName: string; Friends: Person list }
 type Droid = { Id: int; Number: string; Function: string }

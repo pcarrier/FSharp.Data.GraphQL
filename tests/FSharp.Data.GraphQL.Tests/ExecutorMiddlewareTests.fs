@@ -1,12 +1,12 @@
-module FSharp.Data.GraphQL.Tests.ExecutorMiddlewareTests
+module Pure.GraphQL.Tests.ExecutorMiddlewareTests
 
 open Xunit
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Types
-open FSharp.Data.GraphQL.Types.Patterns
-open FSharp.Data.GraphQL.Parser
-open FSharp.Data.GraphQL.Execution
-open FSharp.Data.GraphQL.Ast
+open Pure.GraphQL
+open Pure.GraphQL.Types
+open Pure.GraphQL.Types.Patterns
+open Pure.GraphQL.Parser
+open Pure.GraphQL.Execution
+open Pure.GraphQL.Ast
 open System.Diagnostics
 
 #nowarn "40"

@@ -1,12 +1,12 @@
 ﻿/// The MIT License (MIT)
 /// Copyright (c) 2016 Bazinga Technologies Inc
-module FSharp.Data.GraphQL.Tests.AstValidationTests
+module Pure.GraphQL.Tests.AstValidationTests
 
-open FSharp.Data.GraphQL
-open FSharp.Data.GraphQL.Validation
-open FSharp.Data.GraphQL.Validation.Ast
+open Pure.GraphQL
+open Pure.GraphQL.Validation
+open Pure.GraphQL.Validation.Ast
 open Xunit
-open FSharp.Data.GraphQL.Types
+open Pure.GraphQL.Types
 
 type Command =
     | SIT = 1
